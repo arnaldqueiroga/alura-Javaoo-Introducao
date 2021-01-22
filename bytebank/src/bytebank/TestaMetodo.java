@@ -26,6 +26,8 @@ public class TestaMetodo {
 		
 		System.out.println(contaDoPaulo.saldo);
 		
+		contaDoPaulo.titular = "paulo";
+		
 		
 		
 		
