@@ -2,30 +2,31 @@
 public class TestaGetESet {
 
 	public static void main(String[] args) {
-		Conta conta = new Conta();
-		
-		conta.setNumero(1337);
-		
+		Conta conta = new Conta();		
+		conta.setNumero(1337);		
 		System.out.println(conta.getNumero());
 		
-		Cliente paulo = new Cliente();
 		
-		// conta.titular = paulo
 		
-		paulo.setNome("paulo silveira");;
+		Cliente paulo = new Cliente();		
+		paulo.setNome("paulo silveira");
 		
 		conta.setTitular(paulo);
 		
+		conta.getTitular().setProfissao("programador");
+		// agora em duas linhas
+		Cliente titularDaConta = conta.getTitular();
+		
+		titularDaConta.setProfissao("programador");
+		
+		
+		
+		
+		
 		System.out.println(conta.getTitular().getNome());
 		
-		conta.getTitular().setProfissao("desenvolvedor");
-		// abaixo iremor rescrever esse mesmo código, de maneira diferente
 		
-		Cliente novoTitular = conta.getTitular();
-		
-		novoTitular.setProfissao("programador");
-		
-		
+	
 
 	}
 

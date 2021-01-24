@@ -34,18 +34,16 @@ public class Conta {
 	}
 	
 	public double getSaldo() {
-		return this.saldo;
-		
+		return saldo;
 	}
 	
 	public int getNumero() {
-		return this.numero;
+		return numero;
 	}
 	
-	public int setNumero(int numero) {
-		return this.numero = numero;
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
-	
 	
 	public int getAgencia() {
 		return this.agencia;
@@ -62,6 +60,9 @@ public class Conta {
 	public Cliente getTitular() {
 		return titular;
 	}
+	
+	
+	
 }
 		
 		
